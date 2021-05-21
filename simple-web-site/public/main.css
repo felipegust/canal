@@ -1,0 +1,21 @@
+body {
+    background-color:#FAFAFA;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#profilePic {
+    max-width: 125px;
+}
+
+#mainDiv {
+    width: 100%; overflow: hidden;
+}
+
+#imageContainer {
+    width: 125px; float: left;
+}
+
+#profile {
+    margin-left: 130px;
+    width: 400px;
+}
