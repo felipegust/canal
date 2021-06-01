@@ -1,21 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 body {
-    background-color:#FAFAFA;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
 }
 
-#profilePic {
-    max-width: 125px;
+.header {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#mainDiv {
-    width: 100%; overflow: hidden;
+.nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
 }
 
-#imageContainer {
-    width: 125px; float: left;
+.nav h3 {
+    font-weight: 1100;
+    font-size: 1.4rem;
 }
 
-#profile {
-    margin-left: 130px;
-    width: 400px;
+.icon {
+    max-width: 28px;
+    margin-left: 10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-gap: 0.5vw;
+    align-items: center;
+    
+}
+
+.navItems {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.navItems li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* align-self: center; */
+    justify-self: center;
+}
+
+.projectTitle {
+    position: absolute;
+    top: 10px;
+    bottom: 010px;
+    left: 10px;
+    right: 10px;
+    background: white;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    
+    padding-top: 50%;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.post:hover .projectTitle {
+    visibility: visible;
+    opacity: 0.5;
+  }
+
+.contato {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    
+       
 }
