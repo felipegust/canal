@@ -8,7 +8,7 @@ app.use(express.static('public'))
 
 app.get('/', (req, res) => {
     console.log("alguém acessou a página")
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join(__dirname, '/index-2.html'));
 })
 
 app.listen(port, '0.0.0.0', () => {

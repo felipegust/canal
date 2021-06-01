@@ -7,33 +7,27 @@
 
 html, body {
   font-family: 'Montserrat', sans-serif;
+  color: #222;
 }
 
 body {
-    padding: 20px;
     width: 80%;
     margin: 0 auto;
 }
 
 .header {
     width: 100%;
-    height: 20vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .nav {
     width: 100%;
-    height: 15vh;
+    height: 25vh;
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
 
 .nav h3 {
-    font-weight: 1100;
     font-size: 1.4rem;
 }
 
@@ -44,29 +38,39 @@ body {
 
 .main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 0.5vw;
     align-items: center;
-    
 }
 
 .navItems {
     list-style-type: none;
     display: flex;
-    
 }
 
 .navItems li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 0.5vw 0 0.5vw;
+}
+
+.navItems a {
+    text-decoration: none;
+    color: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navItems a:hover {
+    cursor: pointer;
+    background-color: #eee;
 }
 
 .post {
     position: relative;
-    width: 300px;
-    height: 400px;
-    /* align-self: center; */
+    width: 350px;
+    height: 500px;
     justify-self: center;
 }
 
@@ -91,13 +95,24 @@ body {
 .post:hover .projectTitle {
     visibility: visible;
     opacity: 0.5;
+    padding: 50px;
   }
 
-.contato {
+.sobre {
     display: none;
+    grid-template-columns: 1fr 2fr;
 }
 
-@media (max-width: 600px) {
-    
-       
+.profilePic {
+    max-width: 20vw;
+}
+
+.profileText * {
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .nav h3 {
+        font-size: 1rem;
+    }   
 }

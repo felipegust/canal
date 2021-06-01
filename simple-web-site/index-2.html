@@ -4,48 +4,102 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Página de Exemplo</title>
+    <title>Portfólio - Felipe Barbosa</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
+
 
 <body onload="retrieveRepos()">
     <header>
         <div class="nav">
+            <ul class="navItems">
+                <li>
+                    <a onclick="showHome()" id="homeLink">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a onclick="showAbout()" id="aboutLink">
+                        Sobre
+                    </a>
+                </li>
+            </ul>
             <h3>Felipe Barbosa</h3>
             <ul class="navItems">
                 <li>
-                    <a href="http://instagram.com" target="_blank">
-                        <img class="icon" src="/instagram-icon.png" />
-                        
-                    </a>
+                    <img class="icon" src="/instagram-icon.png" onclick='window.open("http://instagram.com")' />
                 </li>
                 <li>
-                    <a href="http://youtube.com" target="_blank">
-                        <img class="icon" src="/youtube-icon.png" />
-                        
-                    </a>
-                </li>
-                <li>
-                    <a href="http://linkedin.com" target="_blank">
-                        <img class="icon" src="/linkedin-icon.png" />
-                        
-                    </a>
-                </li>
 
+                    <img class="icon" src="/youtube-icon.png" onclick='window.open("http://youtube.com")' />
+                </li>
+                <li>
+
+                    <img class="icon" src="/linkedin-icon.png" onclick='window.open("http://linkedin.com")' />
+                </li>
             </ul>
-
-
         </div>
     </header>
-    <section class="main" id="main">
-        
-    </section>
-    <section class="contato">
-        oi
+    <section class="main" id="main"></section>
+    <section class="sobre" id="sobre">
+        <img src="/felipe.png" class="profilePic" />
+        <div class="profileText">
+            <h3>
+                Sobre
+            </h3>
+            <p>
+                More than 10 years of experience in managing software development teams. Focused on rapid innovation
+                through
+                the development of assets and demos with artificial intelligence and web development in general.
+
+                Technical team leader responsible for managing a multi-disciplinary team, supporting projects and
+                opportunities across Latin America.
+
+                Significant knowledge in software development, software architecture, javascript, sql, mvc, clean
+                architecture, python, react, node, SOLID and cloud-based platforms.
+
+                Responsible for recruiting and coaching employees during the first couple of years of their careers.
+                Using
+                methodologies to fast track their professional and technical development.
+            </p>
+
+            <h3>
+                IBM
+            </h3>
+            <h4>
+                Industry Solutions Lead
+            </h4>
+            <h4>
+                Mar, 2021 - Present
+            </h4>
+            <p>
+                Provide guidance to a global technical team and client center technical leaders on industry solutions,
+                including setting standards, best practices, working with industry SMEs, overseeing global technical
+                asset
+                development & PoCs and replication to client centers.
+            </p>
+
+            <h3>
+                IBM
+            </h3>
+            <h4>
+                Tech Lead
+            </h4>
+            <h4>
+                Mar, 2021 - Present
+            </h4>
+            <p>
+                Provide guidance to a global technical team and client center technical leaders on industry solutions,
+                including setting standards, best practices, working with industry SMEs, overseeing global technical
+                asset
+                development & PoCs and replication to client centers.
+            </p>
+        </div>
+
     </section>
 </body>
 
